@@ -1,0 +1,27 @@
+@import "normalize";
+
+/* Internal */
+@import "variables";
+@import "globals";
+
+// // Fonts
+// @import "typeface-rajdhani";
+// @import "typeface-open-sans";
+
+@font-face {
+  font-family: $base-font-family3;
+  src: url("../fonts/Dolce\ Vita/Dolce\ Vita.ttf");
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: $base-font-family3;
+  src: url("../fonts/Dolce\ Vita/Dolce\ Vita Heavy\ Bold.ttf");
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: $base-font-family3;
+  src: url("../fonts/Dolce\ Vita/Dolce\ Vita\ Light.ttf");
+  font-weight: lighter;
+}
