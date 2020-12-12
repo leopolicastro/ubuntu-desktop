@@ -1,7 +1,9 @@
+@import "../../assets/styles/variables";
+
 /* The sidebar menu */
 .sidenav {
   height: 100%; /* Full-height: remove this if you want "auto" height */
-  width: 100px; /* Set the width of the sidebar */
+  width: 110px; /* Set the width of the sidebar */
   position: fixed; /* Fixed Sidebar (stay in place on scroll) */
   z-index: 1; /* Stay on top */
   top: 0; /* Stay at the top */
@@ -9,7 +11,35 @@
   background-color: #111; /* Black */
   overflow-x: hidden; /* Disable horizontal scroll */
   padding-top: 20px;
-  opacity: 75%;
+  opacity: 55%;
+  padding-left: 5px;
+  padding-right: 5px;
+  padding-top: 5px;
+
+  .innerSideNav {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    .bottomDiv {
+      padding: 0.5rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+      width: 5rem;
+      &:hover {
+        background-color: $onhover-background-color;
+        opacity: 75%;
+        border-radius: 9px;
+      }
+      i {
+        color: white;
+        font-size: 4rem;
+      }
+    }
+  }
 }
 
 /* The navigation menu links */

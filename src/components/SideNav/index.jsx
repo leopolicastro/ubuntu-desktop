@@ -1,12 +1,16 @@
 import styles from "./SideNav.module.scss";
-
+import Firefox from "../Firefox";
 const SideNav = () => {
   return (
     <div className={styles.sidenav}>
-      <a href="#">About</a>
-      <a href="#">Services</a>
-      <a href="#">Clients</a>
-      <a href="#">Contact</a>
+      <div className={styles.innerSideNav}>
+        <div>
+          <Firefox />
+        </div>
+        <div className={styles.bottomDiv}>
+          <i class="fas fa-th"></i>
+        </div>
+      </div>
     </div>
   );
 };

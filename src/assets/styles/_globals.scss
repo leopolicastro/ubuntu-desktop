@@ -1,5 +1,7 @@
 * {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 a {
@@ -11,4 +13,9 @@ a {
   &:visited {
     color: inherit;
   }
+}
+
+.container {
+  margin: auto;
+  max-width: calc(100vw - 260px);
 }
