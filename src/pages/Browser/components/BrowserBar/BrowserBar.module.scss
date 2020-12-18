@@ -1,0 +1,16 @@
+.browserBar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #ffffff;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.73);
+  height: 30px;
+  .buttonsDiv {
+    display: flex;
+    justify-content: flex-end;
+    width: 10%;
+    position: relative;
+    margin-right: 1rem;
+  }
+}
