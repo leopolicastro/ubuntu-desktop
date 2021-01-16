@@ -24,22 +24,24 @@ const Projects = () => {
       });
   }, []);
   return (
-    <div className={styles.projects}>
+    <div className={styles.projectPage}>
       {projects?.map((project) => {
         return (
-          <div key={project.id} className={styles.projectCard}>
-            <h3>{project.title}</h3>
+          <div key={project.id} className={styles.projects}>
+            <div className={styles.projectCard}>
+              <h3>{project.title}</h3>
 
-            <img
-              src={project.image}
-              alt="wynston logo"
-              className={styles.projectImages}
-            />
-            <div className={styles.description}>{project.description}</div>
-            <div>{project.technology}</div>
-            <a target="_blank" rel="noopener noreferrer" href={project.url}>
-              URL
-            </a>
+              <img
+                src={project.image}
+                alt="image"
+                className={styles.projectImages}
+              />
+              <div className={styles.description}>{project.description}</div>
+              <div>{project.technology}</div>
+              <a target="_blank" rel="noopener noreferrer" href={project.url}>
+                URL
+              </a>
+            </div>
           </div>
         );
       })}

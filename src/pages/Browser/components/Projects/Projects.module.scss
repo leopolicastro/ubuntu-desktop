@@ -1,28 +1,32 @@
-.projects {
-  border: 1px solid lightgrey;
-  padding: 1rem;
-  border-radius: 25px;
+.projectPage {
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   flex-wrap: wrap;
-  width: 20rem;
-  h3 {
-    margin: 1rem 0;
-  }
-  .projectCard {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    a {
-      color: blue;
+  .projects {
+    border: 1px solid lightgrey;
+    padding: 1rem;
+    border-radius: 25px;
+    margin: 1rem;
+    width: 20rem;
+    h3 {
+      margin: 1rem 0;
     }
-  }
-  .description {
-    text-align: center;
-    margin: 1rem 0;
-  }
-  .projectImages {
-    width: 10rem;
+    .projectCard {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      a {
+        color: blue;
+      }
+      .projectImages {
+        width: 10rem;
+        height: 8rem;
+      }
+    }
+    .description {
+      text-align: center;
+      margin: 1rem 0;
+    }
   }
 }
