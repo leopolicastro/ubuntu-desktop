@@ -4,6 +4,10 @@ import styles from "./Projects.module.scss";
 const Projects = () => {
   const [projects, setProjects] = useState(null);
 
+  const compare = (a, b) => {
+    return a.order > b.order ? 1 : a.order < b.order ? -1 : 0;
+  };
+
   useEffect(() => {
     const url = "https://worker.leopolicastro.com/api/projects";
     fetch(url, {
@@ -16,13 +20,13 @@ const Projects = () => {
         return data.json();
       })
       .then((res) => {
-        console.log(res);
-        setProjects(res);
+        setProjects(res.sort(compare));
       })
       .catch((err) => {
         console.log(err);
       });
   }, []);
+
   return (
     <div className={styles.projectPage}>
       {projects?.map((project) => {
