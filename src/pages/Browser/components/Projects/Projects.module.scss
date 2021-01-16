@@ -1,0 +1,28 @@
+.projects {
+  border: 1px solid lightgrey;
+  padding: 1rem;
+  border-radius: 25px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 20rem;
+  h3 {
+    margin: 1rem 0;
+  }
+  .projectCard {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    a {
+      color: blue;
+    }
+  }
+  .description {
+    text-align: center;
+    margin: 1rem 0;
+  }
+  .projectImages {
+    width: 10rem;
+  }
+}

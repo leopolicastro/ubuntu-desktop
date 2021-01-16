@@ -8,7 +8,7 @@ const SideNav = () => {
           <Firefox />
         </div>
         <div className={styles.bottomDiv}>
-          <i class="fas fa-th"></i>
+          <i className="fas fa-th"></i>
         </div>
       </div>
     </div>

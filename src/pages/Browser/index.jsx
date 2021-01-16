@@ -1,7 +1,7 @@
 import { useState } from "react";
 import styles from "./Browser.module.scss";
 import BrowserBar from "./components/BrowserBar";
-
+import Projects from "./components/Projects";
 const Browser = () => {
   const [maximized, setMaximized] = useState(false);
   const maximize = () => {
@@ -21,7 +21,8 @@ const Browser = () => {
   return (
     <div className={styles.browser} id="browser">
       <BrowserBar maximize={maximize} />
-      <h1>Welcome</h1>
+      <h1>Projects</h1>
+      <Projects />
     </div>
   );
 };
