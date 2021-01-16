@@ -30,10 +30,9 @@ const Projects = () => {
           <div key={project.id} className={styles.projects}>
             <div className={styles.projectCard}>
               <h3>{project.title}</h3>
-
               <img
                 src={project.image}
-                alt="image"
+                alt={`${project.title} image`}
                 className={styles.projectImages}
               />
               <div className={styles.description}>{project.description}</div>

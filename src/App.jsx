@@ -9,7 +9,15 @@ function App() {
   return (
     <div>
       <SideNav />
-      <div className="container">{browserOpen && <Browser />}</div>
+
+      <div className="container">
+        {browserOpen && <Browser />}
+        <img
+          className="construction"
+          src="https://leo.nyc3.digitaloceanspaces.com/ubuntu/under-construction.gif"
+          alt="under construction"
+        />
+      </div>
     </div>
   );
 }
